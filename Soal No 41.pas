@@ -1,4 +1,4 @@
-uses wincrt;
+90uses wincrt;
 function mencari(N:integer):integer;
 var i,j,z:integer;
 begin
@@ -14,8 +14,7 @@ begin
  end;
 if (z mod 2 <> 0) then
 mencari:=mencari+1;
-writeln('i ','j ','z');
-writeln(i,' ',j,' ',z);
+writeln('mencari = ',(mencari):1,'mencari+1 = ':20,(mencari+1):1,(z mod 2 <> 0):15,z:14);
 end;
 end;
 var
@@ -23,9 +22,7 @@ var
 begin
 M:=9000;
 writeln('Mencari : ',M);
-
+writeln('(mencari)':1,'(mencari + 1)':23,'(z mod 2 <> 0)':20,'(z)':10);
 write(mencari(M));
-
 readkey;
 end.
-
